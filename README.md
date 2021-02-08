@@ -1,3 +1,5 @@
+------------
+
 El archivo **.html** es el cual realizaremos las pruebas del formulario necesarias.
 
 También tenemos una carpeta para los estilos del **html**, los cuales son realmente simples.
