@@ -12,10 +12,63 @@
 
     <!--Tarjetas para el formulario-->
     <form id="myForm" method="GET">
+        <div>
+            <label> Nombre: </label>
+            <input 
+                class="jsValidator" 
+                type="text" 
+                name="name"
+                data-validators="required length"
+                data-validators_minlength="5"
+				data-validators_maxlength="300">
+        </div>
+
+        <div>
+            <label> Username: </label>
+            <input 
+                class="jsValidator" 
+                type="name" 
+                name="email"
+                data-validators="required length alphanumeric"
+				data-validators_minlength="5"
+				data-validators_maxlength="300">
+        </div>
+
+        <div>
+            <label>Email:</label>
+            <input 
+                class="jsValidator" 
+                type="text" 
+                name="email"
+                data-validators="required email">
+        </div>
+
+        <div>
+            <label>URL:</label>
+            <input 
+                class="jsValidator" 
+                type="text" 
+                name="url"
+                data-validators="required url">
+        </div>
+
+        <div>
+            <label>Edad:</label>
+            <input 
+                class="jsValidator" 
+                type="text" 
+                name="age"
+                data-validators="integer">
+        </div>
+
+        <button type="submit">Enviar</button>
     </form>
 
     <!--Referenciamos el archivo JS-->
     <script src="./js/jsvalidator.js"></script>
+    <script>
+      const myFormValidator = new JSValidator('myForm').init().setAjax();
+    </script>
     
 </body>
 </html>
