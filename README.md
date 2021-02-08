@@ -1,4 +1,3 @@
-
 # Módulo de JavaScript que permita validar formularios de simple y extensible
 
 ------------
@@ -67,5 +66,6 @@ constructor (form_id) {
         console.log(myFormValidator.form);
  
 </script>
+------------
 
-#####*Codema*
+*Codema*
